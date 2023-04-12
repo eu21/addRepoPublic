@@ -1,0 +1,13 @@
+NAME=${PWD##*/} 
+git config --global init.defaultBranch main
+git init
+git add .
+git commit -m "Add existing project files to Git"
+git remote add origin https://github.com/eu21/$NAME.git
+gh repo create $NAME --private --source=. --remote=origin
+git push -u -f origin main
+git push -u -f origin master
+
+
+start microsoft-edge:https://github.com/eu21/$NAME
+
