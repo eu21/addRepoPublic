@@ -1,4 +1,5 @@
 
+NAME=${PWD##*/} 
 
 default="Add existing project files to Git"
 read -p "Enter commit message [$default]: " commitMessage

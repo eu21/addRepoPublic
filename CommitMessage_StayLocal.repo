@@ -1,0 +1,16 @@
+
+
+default="Add existing project files to Git"
+read -p "Enter commit message [$default]: " commitMessage
+commitMessage=${commitMessage:-$default}
+echo $commitMessage
+
+
+
+git add . --ignore-errors
+git commit -m "$commitMessage"
+
+
+#pause in bash is using read command like this
+read -t 5 -p "I am going to wait for 5 seconds only ..."
+
