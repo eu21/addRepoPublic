@@ -1,7 +1,7 @@
 if [ "$USERNAME" = "Yauheni_Kuzniatsou" ]; then
   # do something here
   #echo "Hello, Yauheni_Kuzniatsou!"
-  GITHUBACCOUNT="$GITHUBACCOUNT"
+  GITHUBACCOUNT="eu21"
 else
   #echo "You are not Yauheni_Kuzniatsou"
   GITHUBACCOUNT="annak225"
