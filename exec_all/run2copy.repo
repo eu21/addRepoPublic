@@ -1,3 +1,6 @@
+cd "$(dirname "$0")"
+
+
 if [ "$USERNAME" = "Yauheni_Kuzniatsou" ]; then
   # do something here
   #echo "Hello, Yauheni_Kuzniatsou!"
