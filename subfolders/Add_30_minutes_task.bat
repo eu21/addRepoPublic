@@ -2,7 +2,7 @@ REM Add windows scheduler task that will run every 30 minutes
 REM Programm:
 REM "C:\Program Files\Git\git-bash.exe"
 REM Args:
-REM c:\1\github\exec_all\exec_all_run.repo
+REM %currentDir%exec_all_run.repo
 
 
 
