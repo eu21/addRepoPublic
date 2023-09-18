@@ -1,13 +1,13 @@
 shopt -s globstar
 cd "$(dirname "$0")"
 echo "Executing run.repo from all subfolders..."
-for i in **; do
+for i in *; do
     echo "Found $i"
 	cp run2copy.repo $i/run.repo
     ls -l "$i"
 done
 
-for i in **/run.repo; do
+for i in */run.repo; do
     echo "Found $i"
     #pushd "$(dirname "$i")" > /dev/null
 	cp run.repo .
