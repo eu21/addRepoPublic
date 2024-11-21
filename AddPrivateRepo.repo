@@ -1,17 +1,6 @@
-if [ "$USERNAME" = "Yauheni_Kuzniatsou" ]; then
-  # do something here
-  #echo "Hello, Yauheni_Kuzniatsou!"
-  GITHUBACCOUNT="eu21"
-fi
-
-if [ "$USERNAME" = "user" ]; then
-  # do something here
-  #echo "Hello, Yauheni_Kuzniatsou!"
-  GITHUBACCOUNT="eu21"
-fi
-
-
-
+source ./getusername.repo
+GITHUBACCOUNT=$(get_account)
+echo "Your GitHub account is: $GITHUBACCOUNT"
 
 NAME=${PWD##*/} 
 git config --global init.defaultBranch main
@@ -25,4 +14,4 @@ git push -u -f origin master
 
 
 #start microsoft-edge:https://github.com/$GITHUBACCOUNT/$NAME
-start chrome:https://github.com/$GITHUBACCOUNT/$NAME
+start "C:\Program Files\Google\Chrome\Application\chrome.exe" https://github.com/$GITHUBACCOUNT/$NAME

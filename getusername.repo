@@ -1,0 +1,13 @@
+get_account() {
+  case "$USERNAME" in
+    "Yauheni_Kuzniatsou")
+      echo "eu21"
+      ;;
+    "user")
+      echo "eu21"
+      ;;
+    *)
+      echo "annak225"
+      ;;
+  esac
+}
