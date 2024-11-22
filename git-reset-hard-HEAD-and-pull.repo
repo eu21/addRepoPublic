@@ -1,0 +1,9 @@
+source ./getusername.repo
+GITHUBACCOUNT=$(get_account)
+echo "Your GitHub account is: $GITHUBACCOUNT"
+
+NAME=${PWD##*/} 
+
+git reset --hard HEAD
+
+git pull origin main
