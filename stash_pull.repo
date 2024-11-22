@@ -1,0 +1,8 @@
+source ./getusername.repo
+GITHUBACCOUNT=$(get_account)
+echo "Your GitHub account is: $GITHUBACCOUNT"
+
+NAME=${PWD##*/} 
+
+git stash
+git pull origin main
